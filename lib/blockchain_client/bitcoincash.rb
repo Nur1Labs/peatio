@@ -8,10 +8,6 @@ module BlockchainClient
       json_rpc(:getblock, [block_hash, true]).fetch('result')
     end
 
-    def get_raw_transaction(txid)
-      json_rpc(:getrawtransaction, [txid, true]).fetch('result')
-    end
-
     def normalize_address(address)
       CashAddr::Converter.to_cash_address(super)
     end
@@ -25,6 +21,10 @@ module BlockchainClient
     # IMPORTANT: Be sure to set the correct value!
     def supports_cash_addr_format?
       true
+    end
+
+    def get_unconfirmed_txns
+      json_rpc(:getrawmempool).fetch('result')
     end
   end
 end

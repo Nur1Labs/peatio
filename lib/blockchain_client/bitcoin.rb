@@ -61,6 +61,14 @@ module BlockchainClient
         entries:       entries }
     end
 
+    def get_unconfirmed_txns
+      json_rpc(:getrawmempool).fetch('result').map(&method(:get_raw_transaction))
+    end
+
+    def get_raw_transaction(txid)
+      json_rpc(:getrawtransaction, [txid, true]).fetch('result')
+    end
+
   protected
 
     def connection
