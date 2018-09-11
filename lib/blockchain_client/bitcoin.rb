@@ -29,7 +29,7 @@ module BlockchainClient
     end
 
     def latest_block_number
-      Rails.cache.fetch :latest_bitcoin_block_number, expires_in: 5.seconds do
+      Rails.cache.fetch "latest_#{self.class.name.underscore}_block_number", expires_in: 5.seconds do
         json_rpc(:getblockcount).fetch('result')
       end
     end
