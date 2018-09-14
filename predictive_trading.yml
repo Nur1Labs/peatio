@@ -1,0 +1,57 @@
+usdbtc:
+  bids:
+  - amount:         10
+    min_volume:     10
+    max_volume:     11
+    min_price:      10
+    max_price:      11
+    min_created_at: 2015-09-12 13:35:33
+    max_created_at: 2015-09-12 13:35:33
+
+  asks:
+  - amount:         10
+    min_volume:     10
+    max_volume:     11
+    min_price:      10
+    max_price:      11
+    min_created_at: 2015-09-12 13:35:33
+    max_created_at: 2015-09-12 13:35:33
+
+usdeth:
+  bids:
+  - amount:         10
+    min_volume:     10
+    max_volume:     11
+    min_price:      10
+    max_price:      11
+    min_created_at: 2015-09-12 13:35:33
+    max_created_at: 2015-09-12 13:35:33
+
+  asks:
+  - amount:         10
+    min_volume:     10
+    max_volume:     11
+    min_price:      10
+    max_price:      11
+    min_created_at: 2015-09-12 13:35:33
+    max_created_at: 2015-09-12 13:35:33
+
+#
+# c.option '--root-url URL', String, 'Peatio root URL.'
+#  c.option '--currencies VALUE', String, 'Comma-separated fiat currencies (at least 2).'
+#  c.option '--markets VALUE', String, 'Comma-separated list of markets to trade in (at least 1).'
+#  c.option '--traders NUMBER', Integer, 'Number of traders (at least 2).'
+#  c.option '--orders NUMBER', Integer, 'Number of orders to create.'
+#  c.option '--threads NUMBER', Integer, 'Number of simultaneous requests.'
+#  c.option '--min-volume NUMBER', Float, 'The minimum volume or order (defaults to 1.0).'
+#  c.option '--max-volume NUMBER', Float, 'The maximum volume or order (defaults to 100.0).'
+#  c.option '--volume-step NUMBER', Float, 'The number which is used split range between min and max volumes into list (defaults to 1.0).'
+#  c.option '--min-price NUMBER', Float, 'The minimum price or order (defaults to 0.5).'
+#  c.option '--max-price NUMBER', Float, 'The maximum price or order (defaults to 1.5).'
+#  c.option '--price-step NUMBER', Float, 'The number which is used split range between min and max prices into list (defaults to 0.1).'
+#  c.option '--api-v2-jwt-key VALUE', String, 'Private RSA key used for signing JWT in Member API v2. Must be in PEM format URL-safe Base64 encoded.'
+#  c.option '--api-v2-jwt-algorithm VALUE', String, 'JWT signing algorithm in Member API v2 (defaults to "RS256").'
+#  c.option '--management-api-v1-jwt-key VALUE', String, 'Private RSA key used for signing JWT in Management API v1. Must be in PEM format URL-safe Base64 encoded.'
+#  c.option '--management-api-v1-jwt-signer VALUE', String, 'Management API v1 JWT signer name (defaults to "applogic").'
+#  c.option '--management-api-v1-jwt-algorithm VALUE', String, 'JWT signing algorithm in Management API v1 (defaults to "RS256").'
+#  c.option '--report-yaml VALUE', String, 'Path to store a report in YAML format'
