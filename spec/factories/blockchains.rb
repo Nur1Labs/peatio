@@ -98,5 +98,17 @@ FactoryBot.define do
       explorer_transaction    'https://bithomp.com/explorer/#{txid}'
       status                  'active'
     end
+	
+	trait 'ar-testnet' do
+      key                     'ar-testnet'
+      name                    'MuBdI Testnet'
+      client                  'mubdi'
+      server                  'http://127.0.0.1:43088'
+      height                  250897
+      min_confirmations       1
+      explorer_address        'https://mubdi.jp/explorer/#{address}'
+      explorer_transaction    'https://mubdi.jp/explorer/#{txid}'
+      status                  'active'
+    end
   end
 end

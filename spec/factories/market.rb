@@ -53,5 +53,17 @@ FactoryBot.define do
       position      3
       enabled       true
     end
+	
+	trait :btcar do
+      id            'btcar'
+      ask_unit      'btc'
+      bid_unit      'ar'
+      ask_fee       0.0001
+      bid_fee       0.0001
+      ask_precision 4
+      bid_precision 4
+      position      3
+      enabled       true
+    end
   end
 end

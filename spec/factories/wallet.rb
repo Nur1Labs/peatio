@@ -68,5 +68,18 @@ FactoryBot.define do
       uri                'http://127.0.0.1:5005'
       secret             'changeme'
     end
+	
+	trait :ar_hot do
+      currency_id        'ar'
+      blockchain_key     'ar-testnet'
+      name               'MuBdI Hot Wallet'
+      address            'a4kpJtnx4goLYXoRdi7mbkRpZ9Xpx2RyPN'
+      kind               'hot'
+      nsig               2
+      status             'active'
+      gateway            'mubdid'
+      uri                'http://127.0.0.1:43088'
+      secret             'changeme'
+    end
   end
 end

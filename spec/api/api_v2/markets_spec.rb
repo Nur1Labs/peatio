@@ -8,7 +8,8 @@ describe APIv2::Markets, type: :request do
         {"id"=>"btcusd", "name"=>"BTC/USD"},
         {"id"=>"dashbtc", "name"=>"DASH/BTC"},
         {"id"=>"btceth", "name"=>"BTC/ETH"},
-        {"id"=>"btcxrp", "name"=>"BTC/XRP"}
+        {"id"=>"btcxrp", "name"=>"BTC/XRP"},
+		{"id"=>"btcar", "name"=>"BTC/AR"}
       ]
     end
 

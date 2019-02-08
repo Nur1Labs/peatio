@@ -94,6 +94,8 @@ RSpec.configure do |config|
     %i[ usd btc dash eth xrp trst bch eur ltc ].each { |ccy| FactoryBot.create(:currency, ccy) }
     %i[ eth_hot btc_hot btc_deposit xrp_hot].each { |ccy| FactoryBot.create(:wallet, ccy) }
     %i[ btcusd dashbtc btceth btcxrp].each { |market| FactoryBot.create(:market, market) }
+	%i[ eth_hot btc_hot btc_deposit ar_hot].each { |ccy| FactoryBot.create(:wallet, ccy) }
+    %i[ btcusd dashbtc btceth btcar].each { |market| FactoryBot.create(:market, market) }
   end
 
   config.append_after :each do
